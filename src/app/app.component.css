@@ -1,0 +1,27 @@
+.new-user-button {
+  text-align: center;
+}
+/*button{
+    background-color: #19A2C9;
+    color: white;
+}*/
+.btn, .btn.focus, .btn:focus, .btn:hover {
+     background-color: #19A2C9;
+    color: white;
+}
+
+.user-card {
+  display: block;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  padding: 20px 10px;
+  margin: 0 auto;
+  border-radius: 2px;
+  text-align: center;
+  max-width: 665px;
+}
+
+/*.user-card img {
+    height: 72px;
+    width: 72px;
+}*/

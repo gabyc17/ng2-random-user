@@ -1,3 +1,57 @@
-<h1>
-  {{title}}
-</h1>
+<h1 class="text-center">{{title}}</h1>
+<!--<div>
+  <label>User name:</label> <input #heroName />
+  <button (click)="add(heroName.value); heroName.value=''">
+    Add
+  </button>
+</div>-->
+<!--<span>{{users.results | json}}</span>-->
+
+
+<!--<div *ngIf="users">
+  {{users.results[0].name | json}}
+</div>-->
+
+<div class="new-user-button">
+  <button class="btn" autofocus (click)="getRandomUser()">
+        <i class="fa fa-user"></i>{{buttonText}}</button>
+</div>
+
+<!--<div class="user-card">-->
+<!--<div [hidden]="!loading">
+        <content select="[loading]"></content>
+      </div>-->
+<div class="user-card">
+  <p>please click on "Get New User"</p>
+  <!--<div [hidden]="user" class="no-user">
+          <content select="[no-user]"></content>
+        </div>-->
+  <div [hidden]="!loading">
+    <i class="fa fa-refresh fa-2x fa-spin"></i>
+  </div>
+
+  <div *ngIf="user" [hidden]="loading">
+    <!--<div *ngIf="user" >-->
+    <!--{{users.results[0].name.first | json}}
+  {{properties.title}}-->
+
+
+    <!--<strong>{{properties.title}}:</strong> -->
+    <!--
+   {{ UsersProperties.title }}
+    {{ UsersProperties.getVal | json }}-->
+
+    <!--<div class="user-avatar-container">
+            <img [src]="user.picture.medium" alt="User Avatar" />
+          </div>-->
+    <!--<strong>cel:{{user.cell}}</strong> -->
+    <img [src]="user.picture.medium" alt="User Avatar" />
+
+    <div *ngFor="let item of properties">
+
+      <span>{{item.title}}</span><span>{{item.value}}</span>
+    </div>
+
+  </div>
+</div>
+<!--</div>-->
