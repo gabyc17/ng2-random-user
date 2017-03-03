@@ -4,14 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { UserComponent } from './user.component/user.component';
 import { Conector }         from './conector'; //servicio propio
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent
   ],
   imports: [
     BrowserModule,
