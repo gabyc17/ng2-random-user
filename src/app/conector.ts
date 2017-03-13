@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
   export class Conector {
   private headers = new Headers({'Content-Type': 'application/json'});
-  private dataUrl = 'https://randomuser.me/api/?results=10';  // URL to randomuser api
+  private dataUrl = 'https://randomuser.me/api/?results=1';  // URL to randomuser api
   constructor(private http: Http) { }
   //Users = [];
   getUserData(){
